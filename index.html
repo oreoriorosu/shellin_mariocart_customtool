@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>マリオカートワールド　カスタム最適化ツール</title>
+    <link href="src/index.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="module" src="src/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>マリオカートワールド　カスタム最適化ツール</h1>
+        <div class="tool_select_tab">
+            <li>
+                <ul>カスタム最適化</ul>
+            </li>
+        </div>
+    </header>
+    <div class="body_wrapper">
+        <div class="search_panel">
+            <form id="custom_search" method="GET">
+                <div class="input_line character">
+                    <div class="title">キャラクター</div>
+                    <div class="value">
+                        <select id="select_character" name="character"></select>
+                    </div>
+                </div>
+                <div class="input_line vehicle">のりもの</div>
+                <div class="input_line Road">
+                    <div class="title">オンロード</div>
+                    <div class="value">
+                        <input type="range" id="range_road" name="range_road" max="3" step="0.1" value="1"
+                            list="markers">
+                        <label for="range_road">1.0倍</label>
+                    </div>
+                </div>
+                <div class="input_line Terrain">
+                    <div class="title">ダート</div>
+                    <div class="value">
+                        <input type="range" id="range_terrain" name="range_terrain" max="3" step="0.1" value="1"
+                            list="markers">
+                        <label for="range_terrain">1.0倍</label>
+                    </div>
+                </div>
+                <div class="input_line Water">
+                    <div class="title">水上</div>
+                    <div class="value">
+                        <input type="range" id="range_water" name="range_water" max="3" step="0.1" value="1"
+                            list="markers">
+                        <label for="range_water">1.0倍</label>
+                    </div>
+                </div>
+                <div class="input_line Accel">
+                    <div class="title">かそく</div>
+                    <div class="value">
+                        <input type="range" id="range_accel" name="range_accel" max="3" step="0.1" value="1"
+                            list="markers">
+                        <label for="range_accel">1.0倍</label>
+                    </div>
+                </div>
+                <div class="input_line Weight">
+                    <div class="title">おもさ</div>
+                    <div class="value">
+                        <input type="range" id="range_weight" name="range_weight" max="3" step="0.1" value="1"
+                            list="markers">
+                        <label for="range_weight">1.0倍</label>
+                    </div>
+                </div>
+                <div class="input_line Handling">
+                    <div class="title">まがりやすさ</div>
+                    <div class="value">
+                        <input type="range" id="range_handling" name="range_handling" max="3" step="0.1" value="1"
+                            list="markers">
+                        <label for="range_handling">1.0倍</label>
+                    </div>
+                </div>
+                <datalist id="markers">
+                    <option value="0"></option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                </datalist>
+                <input id="submit" type="button" value="検索">
+            </form>
+        </div>
+        <div class="result"></div>
+    </div>
+    <footer>
+        <p>&copy;2025 oreoriorosu</p>
+    </footer>
+
+</body>
+
+</html>

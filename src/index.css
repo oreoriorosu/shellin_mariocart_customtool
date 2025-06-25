@@ -1,0 +1,21 @@
+table {
+    border-collapse: collapse;
+}
+
+th {
+    padding: 0px 10px;
+    border-bottom: 1px solid #555555;
+}
+
+td {
+    text-align: center;
+    padding: 0px 10px;
+}
+
+
+tr {
+}
+
+.input_line {
+    display: flex;
+}
